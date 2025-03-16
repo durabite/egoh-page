@@ -4,8 +4,15 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'standalone',
   images: {
-    domains: ['ivanegoh.com', 'www.ivanegoh.com'],
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ivanegoh.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.ivanegoh.com',
+      },
       {
         protocol: 'https',
         hostname: '**',

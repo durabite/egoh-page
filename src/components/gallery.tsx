@@ -1,6 +1,18 @@
 import Image from "next/image"
 
 export default function Gallery() {
+  // Array de rutas de imágenes estáticas
+  const imagePaths = [
+    "/images/obra01.jpg",
+    "/images/obra02.jpg",
+    "/images/obra03.jpg",
+    "/images/obra04.jpg",
+    "/images/obra05.jpg",
+    "/images/obra06.jpg",
+    "/images/obra07.jpg",
+    "/images/obra08.jpg",
+  ]
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -10,13 +22,15 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <div key={item} className="aspect-square relative overflow-hidden group">
+          {imagePaths.map((path, index) => (
+            <div key={index} className="aspect-square relative overflow-hidden group">
               <Image
-                src={`/images/obra0${item}.jpg `}
-                alt={`Obra de arte ${item}`}
+                src={path}
+                alt={`Obra de arte ${index + 1}`}
                 fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
+                unoptimized
               />
             </div>
           ))}
@@ -25,4 +39,3 @@ export default function Gallery() {
     </section>
   )
 }
-

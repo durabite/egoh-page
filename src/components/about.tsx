@@ -14,6 +14,8 @@ export default function About() {
               alt="Ivan Egoh - Artista"
               fill
               className="object-cover"
+              unoptimized
+              priority
             />
           </div>
 
@@ -43,4 +45,3 @@ export default function About() {
     </section>
   )
 }
-
