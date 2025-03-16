@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import EventCard from "@/components/event-card"
 
 export default function Events() {
@@ -20,7 +18,7 @@ export default function Events() {
             title="1ra Exposicion del Taller de la Plaza"
             date="28 de Julio, 2024"
             location="Plaza de las Estrellas"
-            image="/images/1raExpo.jpg"
+            image="/images/1raExpo.JPG"
             availableSpots={0}
           />
           <EventCard
@@ -37,4 +35,3 @@ export default function Events() {
     </section>
   )
 }
-

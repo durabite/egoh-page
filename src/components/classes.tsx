@@ -9,7 +9,7 @@ export default function Classes() {
           <h2 className="text-3xl font-light text-neutral-500 mb-2">EXPERIENCIA</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-8">Clases de Arte</h3>
           <p className="text-lg text-neutral-600">
-            Descubre el artista que llevas dentro con nuestras clases personalizadas en "El Taller de la Plaza". Aprende
+            Descubre el artista que llevas dentro con nuestras clases personalizadas en &quot;El Taller de la Plaza&quot;. Aprende
             diversas técnicas y desarrolla tu propio estilo.
           </p>
         </div>
@@ -38,4 +38,3 @@ export default function Classes() {
     </section>
   )
 }
-
